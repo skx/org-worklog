@@ -6,24 +6,26 @@
 #+EXPORT_EXCLUDE_TAGS: noexport
 
 * Introduction
-For the past few years I've maintained a simple work-log, =~/Work.md=, containing notes, references, and documentation on what I've done each day.  This was briefly documented on my blog:
+For the past few years I've maintained a simple work-log, =~/Work.md=, containing notes, references, and documentation on what I've done each day.  This was briefly documented [[https://blog.steve.fi/keeping_a_simple_markdown_work_log__via_emacs.html][on my blog]].
 
-https://blog.steve.fi/keeping_a_simple_markdown_work_log__via_emacs.html
+This habit has served me well, but now I'm using =org-mode=, which is part of emacs.
 
-As an experiment I'm now using =org-mode=, which is part of emacs.  There are many tutorials and guides relating to =org-mode=, as well as a [[https://orgmode.org/][dedicated website]] containing reference material.  In terms of this file there are only a few things to note:
+There are many tutorials and guides relating to =org-mode=, as well as a [[https://orgmode.org/][dedicated website]] containing reference material.  In terms of /this/ file there are only a few things to note:
 
 - It is written in =org-mode= syntax, which is similar to markdown.
-  - The most obvious difference is that sections are quoted with === rather than =`=.
+  - Headers are prefixed with a =*= rather than a =#=.
+  - Inline-code is quoted with === rather than =`=.
   - Everything is a tree, and you can toggle them open/closed via =TAB= & =Shift-TAB=
-- Finally there is a bunch of embedded lisp at the foot of the document.
-  - This is here, rather than in my [[https://github.com/skx/dotfiles/tree/master/.emacs.d][emacs .dotfiles]], so this file is self-contained and portable.
-  - Anyway as a result of this you can run =M-x new-day= to quickly add a new (standard) section to the document.
-  - You can also run =M-x today= to jump to today's entry.
+- Because this is used within Emacs you can of course customize it with your own Lisp code.
+- This document contains a couple of blocks of Emacs Lisp to do different things.
+  - Code is inline, rather than in my [[https://github.com/skx/dotfiles/blob/master/.emacs.d/init.md][emacs .dotfiles]], so this file is self-contained.
 
-**TLDR**:  Every day I add a new entry, via =M-x new-day=.  The new entry contains a consistent set of subheadings, and upon export those sections which are empty are removed.
+**TLDR**:  Every day I add a new entry, via =M-x new-day=.  The new entry contains a consistent set of subheadings, and upon export any sections for a given day which are which are empty are removed.
 
 ** Implementation Notes
-Of course for the magic lisp contained at the foot of this document to work it must be evaluated.  My own emacs init files handle this here:
+The lisp contained at the foot of this document must be evaluated to gain access to the ability to add new entries, and jump to today's entry.
+
+My own emacs init files handle this here:
 
 - https://github.com/skx/dotfiles/blob/master/.emacs.d/init.md#org-mode-code-execution
 
@@ -35,10 +37,13 @@ There are two things to note:
   - This updates our tag-cloud.
 
 * Achievements
+
+This is just a random section to show that you can add your own global contents, as well as the daily-log entries.
+
 ** 2019
-Things I achieved in 2019.
+Things I achieved in 2019 were good.
 ** 2020
-Things I achieved in 2020.
+Things I achieved in 2020, went viral.
 
 * Tag Cloud                                                        :noexport:
 The following table is automatically updated every time this document is saved, via the [[skx-saveblock]] handler.
@@ -104,6 +109,22 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 #+END_SRC
 
+
+* 27/10/2020
+** Administrivia                                                    :github:
+Today I published this file, in a dedicated repository:
+
+- https://github.com/skx/org-worklog
+** Desktop Setup
+None.
+** Games
+None.
+** Meetings
+- 09:00-09:15 - Daily Sync
+** Tickets / Stories / Projects
+None.
+** Problems
+None.
 * DD/MM/YYYY                                                       :noexport:
 ** Administrivia
 None.
