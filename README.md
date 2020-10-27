@@ -1,6 +1,10 @@
 # org-worklog
 
-This repository contains a single file, [template.org](template.org), which can be used to maintain a daily work-log via Emacs [org-mode](https://orgmode.org/).
+This repository contains a single file, `template.org` which can be used to maintain a daily work-log via Emacs [org-mode](https://orgmode.org/).
+
+The best view of the template is the raw view where you can see the embedded code & etc:
+
+* [template.org](https://raw.githubusercontent.com/skx/org-worklog/master/template.org)
 
 
 
@@ -18,9 +22,11 @@ automation in-place such that you can:
 * Reasonably nice formatting for HTML & PDF export.
 
 
+
 ## Dependencies
 
 The integrated elisp is well documented, and would require a little effort to evaluate on-load.  That said there are no external dependencies.
+
 
 
 ## Bug Reports / Feature Requests
