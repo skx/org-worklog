@@ -2,7 +2,7 @@
 
 This repository contains a single file, `template.org` which can be used to maintain a daily work-log via Emacs [org-mode](https://orgmode.org/).
 
-The best view of the template is the raw view where you can see the embedded code & etc:
+The best way to see the template is the raw view where you can see the embedded code & etc:
 
 * [template.org](https://raw.githubusercontent.com/skx/org-worklog/master/template.org)
 
@@ -17,8 +17,8 @@ automation in-place such that you can:
   * By running `M-x new-day`.
 * Jump to today's entry.
   * By running `M-x today`
-* Automatically maintain a simple tag-cloud
-  * A table collects all the unique tags seen in the document, and allows yo uto show matching entries.
+* Automatically maintain a simple tag-cloud.
+  * A table collects all the unique tags seen in the document, and allows you to show matching entries.
 * Reasonably nice formatting for HTML & PDF export.
 
 
