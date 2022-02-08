@@ -32,3 +32,11 @@ The integrated elisp is well documented, and would require a little effort to ev
 ## Bug Reports / Feature Requests
 
 Feedback is welcome, just [report an issue](https://github.com/skx/org-worklog/issues).
+
+
+## Alternatives
+
+The code here has been turned into a simple package, which means you can
+just create a `diary.org` file and get started.
+
+* [https://github.com/skx/org-diary](https://github.com/skx/org-diary)
